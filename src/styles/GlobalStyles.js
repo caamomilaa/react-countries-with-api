@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { COLORS } from '../constants/colors';
 
 export const GlobalStyles = createGlobalStyle`
     *,
@@ -29,6 +30,8 @@ export const GlobalStyles = createGlobalStyle`
 
     body {
         margin: 0;
-        font-family: sans-serif;
+        font-family: "Nunito Sans", sans-serif;
+        color: ${COLORS.grey950};
+        background-color: ${COLORS.grey50};
     }
 `;
